@@ -4,3 +4,16 @@
 .bg-secondary {
     background-color: #404E3B !important;
 }
+.bg-tertiary {
+ background-color: #e6e6e6;
+}
+
+main {
+padding-top: 68px;
+}
+
+body {
+background-image: url(media/background.jpg);
+background-repeat: no-repeat;
+background-position: center;
+}
