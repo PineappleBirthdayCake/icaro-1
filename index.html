@@ -11,10 +11,10 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-dark">
+<body>
   <nav class="navbar bg-secondary fixed-top" data-bs-theme="dark">
     <div class="container-fluid">
-      <h3 class="navbar-brand">Lucas Montenegro Vila</h2>
+      <h3 class="navbar-brand">Lucas Montenegro</h2>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
           aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -60,9 +60,39 @@
     </div>
   </nav>
   <main class="container bg-primary">
-    <div class="row">
-      <h1 class="text-light">Inicio</h1>
-    </div>
+    <h1 class="text-light nombre-pagina">Inicio</h1>
+    <section class="col container">
+      <div class="row mb-4">
+        <div class="col d-flex align-self-center justify-content-center">
+          <img src="media/Placeholder.png" alt="" class="rounded-pill inicio-perfil mb-1">
+        </div>
+        <div class="col align-self-center">
+          <h5 class="text-light text-center mb-0">Hola, soy</h5>
+          <h1 class="text-light text-center mb-0">Lucas Montenegro</h1>
+          <h3 class="text-light text-center">Fullstack Developer</h3>
+          <div class="d-flex justify-content-center">
+            <button type="button" class="btn me-2 text-light">Descargar CV</button>
+            <button type="button" class="btn"><a href="contacto.html"
+                class="link-light link-underline-opacity-0">Información de contacto</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <hr class="text-light">
+      </div>
+      <div class="row mb-3">
+        <h5 class="text-light">Sobre mí</h5>
+        <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+          eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum. </p>
+        <div class="col-12">
+          <button type="button" class="btn"><a href="contenido.html"
+              class="link-light link-underline-opacity-0">Habilidades y proyectos</a></button>
+        </div>
+      </div>
+    </section>
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
