@@ -1,22 +1,56 @@
 .bg-primary {
-    background-color: #7B9669 !important;
+    background-color: #2e2e2e !important;
 }
+
 .bg-secondary {
     background-color: #404E3B !important;
 }
+
+.btn-dark {
+    background-color: #404E3B !important;
+}
+
 .bg-tertiary {
- background-color: #e6e6e6;
+    background-color: #e6e6e6;
+}
+
+/* #7B9669 */
+
+body {
+    background-color: #2e2e2e !important;
+}
+
+.nombre-pagina {
+    padding-top: 68px;
 }
 
 main {
-padding-top: 68px;
-min-height: 100vh;
+    min-height: 100vh;
 }
 
-body {
-background-image: url(media/background.jpg);
-background-repeat: no-repeat;
-background-position: center;
+.inicio-perfil {
+    width: 300px;
+    height: 300px;
+}
+
+.inicio-perfil:hover {
+    animation: spin 1s ease-in-out;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.contenido-logo-box {
+    display: inline-block;
+    width: 100%;
 }
 
 .contenido-logo {
@@ -25,8 +59,63 @@ background-position: center;
     max-height: 100px;
     object-fit: contain;
     overflow: hidden;
+    transition: transform 0.3s ease;
+    transform: scale(1);
+}
+
+.contenido-logo:hover {
+    transform: scale(1.1);
+}
+
+.contenido-proyecto {
+    transition: transform 0.3s ease;
+    transform: scale(1);
+}
+
+.contenido-proyecto:hover {
+    transform: scale(1.01);
+}
+
+.contenido-proyecto img {
+    margin: auto;
+    width: 100%;
+    min-width: 200px;
+    max-height: 100px;
+    object-position: center;
+    object-fit: cover;
+}
+
+form div {
+    max-width: 500px;
+}
+
+.btn {
+    border-color: #404E3B;
+    border-width: 2px;
+    background-color: none;
+    transition-duration: 0.2s;
+}
+
+.btn:hover {
+    background-color: #404E3B;
 }
 
 @media (min-width: 768px) {
-  .small-breakpoint {display: none;}
+    .small-breakpoint {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .inicio-perfil {
+        height: 150px;
+        width: 150px;
+        margin-bottom: 1em !important;
+    }
+}
+
+@media (max-width: 990px) {
+    .large-breakpoint {
+        display: none;
+    }
 }
